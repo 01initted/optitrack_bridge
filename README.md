@@ -55,7 +55,7 @@ In the robotics env, I suggests to use publish unlabeled marker pose array.(And 
       
     pycharm-commnunity
 
-Here is the sample code for extracting points from optitrack
+Here is the sample code for extracting points from optitrack. (You can download it from local_points_extract.py)
 
 
     import rospy
