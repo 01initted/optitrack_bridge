@@ -53,5 +53,40 @@ In the robotics env, I suggests to use publish unlabeled marker pose array.(And 
 ---
 (minor issue) on pycharm, you should turn on pycharm in terminal to use rospy. (even if you have rospack on your conda env)
       
-
     pycharm-commnunity
+
+Here is the sample code for extracting points from optitrack
+
+
+    import rospy
+    from geometry_msgs.msg import PoseArray
+    
+    
+    class opti_track():
+        def __init__(self):
+            global point_1, point_2, point_3, point_4, point_5, point_6, point_7, point_num
+            rospy.init_node('optitrack_subscriber', anonymous=True)
+            rospy.Subscriber("/optitrack/unlabeled/markerPoseArray", PoseArray, self.callback, queue_size=1)
+    
+        def callback(self, msg):
+            global point_1, point_2, point_3, point_4, point_5, point_6, point_7, point_num
+            point_num = len(msg.poses)
+    
+            if point_num == 7:
+                point_1 = msg.poses[0]
+                point_2 = msg.poses[1]
+                point_3 = msg.poses[2]
+                point_4 = msg.poses[3]
+                point_5 = msg.poses[4]
+                point_6 = msg.poses[5]
+                point_7 =  msg.poses[6]
+    
+    if __name__ == '__main__':
+        Opti_track = opti_track()
+        rospy.spin()
+
+
+
+
+
+
