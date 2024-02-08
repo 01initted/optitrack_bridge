@@ -52,4 +52,6 @@ In the robotics env, I suggests to use publish unlabeled marker pose array.(And 
 **5.Local Code**
 ---
 (minor issue) on pycharm, you should turn on pycharm in terminal to use rospy. (even if you have rospack on your conda env)
+      
+
     pycharm-commnunity
