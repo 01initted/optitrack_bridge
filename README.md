@@ -52,8 +52,6 @@ In the robotics env, I suggests to use publish unlabeled marker pose array.(And 
 **5.Package**
 ---
 Extracting the unlabled markers center position, through the ros package on local computer.
-'''
-cd ~/catkin_ws/src/
-catkin_create_pkg test std_msgs geometry_msgs rospy roscpp
+    cd ~/catkin_ws/src/
+    catkin_create_pkg test std_msgs geometry_msgs rospy roscpp
 
-'''
