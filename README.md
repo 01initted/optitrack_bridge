@@ -16,7 +16,7 @@ This code is for below environment.
 ------
     cd ~/catkin_ws/src
 
-    git clone https://github.com/qwerty35/optitrack_bridge.git
+    git clone https://github.com/01initted/optitrack_bridge.git
 
     cd .. && catkin_make
 
