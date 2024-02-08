@@ -32,6 +32,8 @@ It assumes that your work space is in `~/catkin_ws/src`
 You can change the parameter in the launch file.
 In the robotics env, I suggests to use publish unlabeled marker pose array.(And make your own pose estimation algo.)
 
+**`publish_unlabeled_marker_pose_array`: If true, publish unlabeled markers as geometry::poseArray**
+
 `frame_id`: Set frame id of message.
 
 `message_type`: Ros message type.
@@ -44,6 +46,5 @@ In the robotics env, I suggests to use publish unlabeled marker pose array.(And 
 
 `publish_labeled_marker_pose_array`: If true, publish pose of object's markers as geometry::poseArray 
 
-`publish_unlabeled_marker_pose_array`: If true, publish unlabeled markers as geometry::poseArray
 
 (If labeled or unlabeled markers are not published, check Motive -> Streaming Pane -> Labeled or Unlabeld Markers)
