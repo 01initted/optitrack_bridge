@@ -55,4 +55,9 @@ Extracting the unlabled markers center position, through the ros package on loca
 
     cd ~/catkin_ws/src/
     catkin_create_pkg test std_msgs geometry_msgs rospy roscpp
+    mkdir scripts
+
+Put your scripts on dir scripts.
+
+
 
