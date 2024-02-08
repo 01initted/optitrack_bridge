@@ -4,9 +4,6 @@ This package converts Optitrack rigidBody message to ROS1 pose/odometry/tf messa
 
 Tested in 
 - Ubuntu 20.04, ROS Noetic 
-- Ubuntu 18.04, ROS Melodic 
-- Ubuntu 16.04, ROS Kinetic
-
 
 1.Prerequisite
 ------
@@ -27,11 +24,14 @@ It assumes that your work space is in `~/catkin_ws/src`
 
 3.Usage
 ------
+    source devel/setup.bash
     roslaunch optitrack_bridge optitrack.launch
-
 
 4.Parameters
 -----
+You can change the parameter in the launch file.
+In the robotics env, I suggests to use publish unlabeled marker pose array.(And make your own pose estimation algo.)
+
 `frame_id`: Set frame id of message.
 
 `message_type`: Ros message type.
