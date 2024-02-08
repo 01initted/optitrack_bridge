@@ -49,15 +49,7 @@ In the robotics env, I suggests to use publish unlabeled marker pose array.(And 
 
 (If labeled or unlabeled markers are not published, check Motive -> Streaming Pane -> Labeled or Unlabeld Markers)
 
-**5.Package**
+**5.Local Code**
 ---
-Extracting the unlabled markers center position, through the ros package on local computer
-
-    cd ~/catkin_ws/src/
-    catkin_create_pkg test std_msgs geometry_msgs rospy roscpp
-    mkdir scripts
-
-Put your scripts on dir scripts.
-
-
-
+(minor issue) on pycharm, you should turn on pycharm in terminal to use rospy. (even if you have rospack on your conda env)
+    pycharm-commnunity
