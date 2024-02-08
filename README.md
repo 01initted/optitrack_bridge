@@ -48,3 +48,8 @@ In the robotics env, I suggests to use publish unlabeled marker pose array.(And 
 
 
 (If labeled or unlabeled markers are not published, check Motive -> Streaming Pane -> Labeled or Unlabeld Markers)
+
+**5.Rospy**
+---
+Extracting the unlabled markers center position, through rospy on local computer.
+
